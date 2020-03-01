@@ -33,13 +33,14 @@ void TestVirtualInherit() {
 
 	VBase1 & base1 = dynamic_cast<VBase1&>(sub);
 	VBase2 & base2 = dynamic_cast<VBase2&>(sub);
-
+	base1.Fun1();
 	int a = 0;
 
 }
 
 void TestVirtualDestroy() {
 	Base1 *base1 = new Derived1();
+	base1->Test1();
 	delete base1;
 	Base2 *base2 = new Derived2();
 	delete base2;

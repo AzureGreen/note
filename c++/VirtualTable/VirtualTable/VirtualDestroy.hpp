@@ -13,6 +13,10 @@ public:
 	~Base1() {
 		cout << "This is Base1 Destroy Func" << endl;
 	}
+	void Test1() {
+		cout << "Base1 Test1" << endl;
+	}
+	int b1_ = 1;
 };
 
 class Base2 {
@@ -33,6 +37,13 @@ public:
 	~Derived1() {
 		cout << "This is Derived1 Destroy Func" << endl;
 	}
+	void Test1() {
+		cout << "Dereived1 Test1" << endl;
+	}
+	void Test2() {
+		cout << "Dereived1 Test2" << endl;
+	}
+	int d1_ = 2;
 };
 
 
